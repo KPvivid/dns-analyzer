@@ -49,7 +49,15 @@ Upon running the program, users can interactively choose between live capture an
 
 ### Logs/Screenshots:
 
+Live capture: 
+<video width="500" height="300" controls>
+  <source src="packet-capture-live.mp4" type="video/mp4">
+</video>
 
+Pcap analyze:
+<video width="500" height="300" controls>
+  <source src="packet-capture-pcap.mp4" type="video/mp4">
+</video>
 
 ## Conclusions/Future Work
 
