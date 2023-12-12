@@ -41,8 +41,8 @@ def visualize_dns(main_domains):
     # Set a custom color cycle for the pie chart
     colors = plt.cm.Paired.colors
 
-    # Plot the pie chart with a shadow, explode the 'Other' slice, and add percentage labels
-    plt.pie(values, labels=labels, autopct='%1.1f%%', startangle=140, shadow=True, colors=colors, explode=[0.1] + [0] * len(top_domains))
+    # Plot the pie chart with a shadow, explode the 'Other' slice, and add count labels
+    plt.pie(values, labels=labels, autopct=lambda p: '{:.0f}'.format(p * sum(values) / 100), startangle=140, shadow=True, colors=colors, explode=[0.1] + [0] * len(top_domains))
     plt.axis('equal')  # Equal aspect ratio ensures that the pie chart is circular.
 
     # Set the title with an increased font size
